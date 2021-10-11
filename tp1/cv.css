@@ -1,0 +1,27 @@
+body {
+    background-color: #e9ebee;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;
+   
+  }
+  h1{
+    color:#3f51b5;
+    text-align: center;
+   
+  }
+  h2{
+    color:#3f51b5;
+  }
+
+  p{
+    
+    text-align: left;
+    font-size: 1rem;
+
+  }
+
+
+
+
+
