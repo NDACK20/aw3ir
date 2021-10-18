@@ -6,17 +6,20 @@
         <title>TP2</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="formulaire.css" />
+        <script type="text/javascript" src="formulaire.js"></script>
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
         <style>
           body{
-              background-color: #e9ebee;              
+              background-color:white;             
               font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
               font-size: 16px;
               margin: 0 auto;
-              max-width: 800px;              
+              max-width: 800px;    
+                        
           }
         </style>
         
@@ -25,9 +28,57 @@
         <!--<script src="js/main.js"></script>-->
     </head>
     <body>        
-        <h1>tp2</h1>
+    
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+    
+        
+       
+        <form id="formulaire" onsubmit="validation()">
+            <h1>Saisie d'une fiche "Personne"</h1>
+
+        <table>
+       
+       <tr>
+        <td> <label for ="nom">Nom</label></td>
+        <td> <input id="nom" name="nom" type="text" minlength="5" maxlength="20"> <br><br></td>
+        
+       </tr>
+
+       <tr>
+        <td> <label for ="prenom">Prénom</label></td>
+        <td> <input id="prenom" name="prenom" type="text" minlength="5" maxlength="20" > <br><br></td>
+
+       </tr>
+       
+
+       <tr>
+        <td> <label for ="date">Date de naissance</label></td>
+        <td> <input id="Date" de naissance name="Date de naissance" type="date" placeholder="JJ/MM/AAAA" > <br><br></td>
+       </tr>
+      
+
+       <tr>
+        <td> <label for ="adresse">Adresse</label></td>
+        <td> <input id="adresse" name="adresse"  type="text" minlength="5" maxlength="50" > <br><br></td>
+
+       </tr>
+        
+       <tr>
+        <td> <label for ="mail">Mail</label></td>
+        <td> <input id="mail" name="mail" type="email" minlength="5" maxlength="30" placeholder="aaa@gg.fr" > <br><br></td>
+
+       </tr>
+ 
+       </table>
+    <input type="button" value="Valider" onclick="validation()"/>
+    </form>
+    
+   
+    <div id="error"> </div> 
+ 
+    <div id="resultat"> </div> 
+  
+
+    
     </body>
 </html>

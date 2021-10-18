@@ -1,0 +1,49 @@
+body{
+    background-color: #e9ebee;              
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;    
+              
+}
+#error{
+    background-color: pink;
+    
+}
+
+#resultat{
+    background-color:green;
+    color: white;
+} 
+html{
+    background-image:url(arfa.png) ;
+}
+
+h1{
+   
+    text-align: center;
+   
+  }
+
+
+form{
+    border: none;
+    padding: 10px;
+    background-color: rgb(38, 144, 160);
+    background-image: url(ndiaye.png);
+}
+
+table{
+    border-collapse: collapse;
+    min-width: 800px;
+    border: steelblue;
+    box-shadow: rgb(224, 64, 216);
+    cursor: pointer;
+    margin: 50px auto;
+    
+}
+td{
+    border: none;
+}
+
+
