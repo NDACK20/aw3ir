@@ -12,13 +12,6 @@ import { MeteoComponent } from './meteo/meteo.component';
     MeteoComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
-    // autres imports ici
-  ])
-  imports: [
     BrowserModule,
     FormsModule, ReactiveFormsModule //<-- Ajouter les références ici aussi
   ],
@@ -41,7 +34,13 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  
+  imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
+    // autres imports ici
+  ],
   ...
 })
 
